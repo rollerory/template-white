@@ -1,0 +1,81 @@
+@use "vars" as *;
+@use "reset";
+
+
+
+body {
+    color: $primary-color;
+    font-family: $ff;
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+p {
+    font-family: $ff;
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+.container {
+    max-width: $container;
+    width: 100%;
+    padding: 0 $container-paddings;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.wrapper {
+    min-height: 100dvh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.main {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+body.hidden {
+    overflow: hidden;
+}
+
+.title {
+    font-size: $title-fz;
+    font-weight: $title-fw;
+    line-height: $title-lh;
+    margin-bottom: $title-mb;
+}
+
+.text {
+    margin-bottom: $text-mb;
+}
+
+section {
+    margin-bottom: $section-mb;
+}
+
+.policy__title,
+.policy__text {
+    max-width: 100%;
+}
+
+.policy__title {
+    font-size: $policy-title-fz;
+    margin-bottom: $policy-title-mb;
+}
+
+.policy__text {
+    margin-bottom: $policy-text-mb;
+}

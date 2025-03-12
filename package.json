@@ -1,0 +1,49 @@
+{
+  "name": "template-white",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "White react template",
+  "bin": {
+    "create-template-white": "index.js"
+  },
+  "keywords": [
+    "react",
+    "vite",
+    "template",
+    "react-starter"
+  ],
+  "author": "Rollerory",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:dev": "vite build --outDir dist-dev --base ./",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "preview": "vite preview",
+    "postinstall": "rm -rf .git && rm -rf node_modules"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "prompts": "^2.4.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.2.0",
+    "sass": "^1.85.1",
+    "vite-plugin-svgr": "^4.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "prettier": "^3.2.5",
+    "vite": "^6.2.0"
+  }
+}

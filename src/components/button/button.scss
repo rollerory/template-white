@@ -1,0 +1,24 @@
+@use "@/styles/vars" as *;
+
+.btn {
+    max-width: $btn-max-width;
+    width: 100%;
+    & a,
+    & button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: $btn-padding;
+        color: #fff;
+        background: $accent-color;
+        font-size: 20px;
+        line-height: normal;
+        text-transform: uppercase;
+        border-radius: 2px;
+        transition: all .3s ease;
+        &:hover {
+            transform: scale(0.98);
+        }
+    }
+}
