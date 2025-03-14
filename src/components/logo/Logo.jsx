@@ -4,7 +4,7 @@ import "./logo.scss"
 
 export default function Logo() {
     return (
-        <Link to="/#header" className="logo">
+        <Link to="/" className="logo">
             <img src={LogoImg} alt="Logo icon" />
             <span>Company Name</span>
         </Link>
