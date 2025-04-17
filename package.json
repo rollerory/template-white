@@ -21,8 +21,7 @@
     "build:dev": "vite build --outDir dist-dev --base ./",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "preview": "vite preview",
-    "postinstall": "rm -rf .git && rm -rf node_modules"
+    "preview": "vite preview"
   },
   "dependencies": {
     "chalk": "^5.4.1",
