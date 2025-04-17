@@ -1,0 +1,22 @@
+@use "@/styles/vars.scss" as *;
+
+.footer {
+    padding: 80px 0;
+    background: $footer-background;
+    color: #fff;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 32px;
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        &__inner {
+            flex-direction: row;
+        }
+    }
+}
