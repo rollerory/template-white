@@ -5,6 +5,13 @@ import path from "path";
 
 export default defineConfig({
     plugins: [react(), svgr()],
+    css: {
+        preprocessorOptions: {
+            scss: {
+                additionalData: `@use "@/styles/vars" as *;`
+            }
+        }
+    },
     resolve: {
         alias: {
             "@": path.resolve(__dirname, "src"),
